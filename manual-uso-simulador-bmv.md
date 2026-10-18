@@ -190,7 +190,7 @@ Para el proyector. Se actualiza sola con cada cambio del tablero, en el mismo na
 
   Fuera de los turnos dice "Sin empresa en turno".
 - **Noticias:** todo el historial de colocación, cierres, bonos, dividendos, riesgos, impagos, quiebras y fin, de la más reciente a la más antigua, con scroll.
-  - **Filtros:** Todas · Riesgos · Cierre · Bonos · Colocación · Otras (dividendos, impagos, quiebras y fin).
+  - **Filtros:** Todas · Riesgos · Cierre · Bonos · Colocación · Dividendos · Impago · Quiebra. El fin de partida aparece en Cierre.
 - **Ranking:** todas las empresas, con scroll; **Ranking final** al terminar.
 - Noticias y ranking conservan la posición del scroll cuando la pantalla se actualiza; también se recorren con el teclado (Tab y flechas).
 

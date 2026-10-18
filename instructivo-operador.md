@@ -77,7 +77,7 @@ Para una sesión de 2 horas, de 8 a 12 rondas mensuales suele ser suficiente.
 5. **Cerrar periodo:** cuando todos terminaron. Si faltan turnos, el botón pide confirmar ("Quedan n turnos. ¿Cerrar?").
 6. **Usa la pantalla pública.**
    - Mientras cada equipo opera, la ventana **Empresa en turno** muestra sus cajas, cartera, deuda y lo que debe pagar en la ronda.
-   - En **Noticias** puedes filtrar por riesgos, cierre, bonos, colocación u otras, y recorrer el historial y el ranking completo con scroll.
+   - En **Noticias** puedes filtrar por riesgos, cierre, bonos, colocación, dividendos, impago o quiebra, y recorrer el historial y el ranking completo con scroll.
 7. **Lee las noticias.** Usa la bitácora (pestaña **Bitácora**) para explicar:
    - el cambio de cada acción, desglosado en valor justo, demanda, economía, azar y riesgos;
    - los riesgos que ocurrieron;
