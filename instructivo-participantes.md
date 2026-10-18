@@ -101,7 +101,7 @@ El operador pulsa **Cerrar periodo** y el simulador:
 - un componente al azar;
 - los riesgos.
 
-Todo queda explicado en la bitácora y en las noticias de la pantalla pública.
+Todo queda explicado en la bitácora y en las noticias de la pantalla pública. Durante tu turno, la pantalla pública muestra tus cajas, tu cartera, tu deuda bancaria y lo que debes pagar en la ronda, así que todo el grupo los verá.
 
 ### Riesgos que te pueden tocar
 - **Mercado:** caída general o de tu giro.

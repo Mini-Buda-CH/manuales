@@ -65,7 +65,7 @@ Para una sesión de 2 horas, de 8 a 12 rondas mensuales suele ser suficiente.
 1. **Turno:** el tablero muestra la empresa en turno ("En turno · 2 de 8") con su caja, cartera y deuda. Si un equipo no está listo, elige otra empresa pendiente en la lista; no pierde su turno.
 2. **Operación:**
    - Elige **Comprar**, **Vender**, **Cruce** o **Crédito**.
-   - Elige el valor y la cantidad. Un clic en una fila de **Cotizaciones** la selecciona.
+   - Elige el valor y la cantidad. Un clic en una fila de **Cotizaciones** la selecciona. Debajo de la cantidad verás cuántos títulos hay disponibles y el máximo que la empresa puede comprar, vender o cruzar.
    - Revisa la **vista previa**: precio, comisión, impuesto, conversión de divisas y tenencia final.
    - Pulsa **Registrar operación**.
    - **Cruce:** confirma en voz alta con ambas empresas el lado, la cantidad y el precio pactado (± 5 % de la cotización).
@@ -75,7 +75,10 @@ Para una sesión de 2 horas, de 8 a 12 rondas mensuales suele ser suficiente.
    - Se pierde al cerrar el periodo o al recargar la página.
 4. **Fin del turno:** con 3 operaciones el turno termina solo; si no, **Terminar turno**, o **Pasar** si no operó.
 5. **Cerrar periodo:** cuando todos terminaron. Si faltan turnos, el botón pide confirmar ("Quedan n turnos. ¿Cerrar?").
-6. **Lee las noticias.** Usa la bitácora (pestaña **Bitácora**) para explicar:
+6. **Usa la pantalla pública.**
+   - Mientras cada equipo opera, la ventana **Empresa en turno** muestra sus cajas, cartera, deuda y lo que debe pagar en la ronda.
+   - En **Noticias** puedes filtrar por riesgos, cierre, bonos, colocación u otras, y recorrer el historial y el ranking completo con scroll.
+7. **Lee las noticias.** Usa la bitácora (pestaña **Bitácora**) para explicar:
    - el cambio de cada acción, desglosado en valor justo, demanda, economía, azar y riesgos;
    - los riesgos que ocurrieron;
    - dividendos, impagos y quiebras.

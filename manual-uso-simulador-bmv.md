@@ -139,6 +139,11 @@ Se actualiza al cambiar cualquier parámetro:
   - **Solicitar:** **Monto** y **Plazo (meses)**, con la tasa, la comisión, el monto a recibir, la mensualidad estimada, los intereses estimados y el disponible;
   - **Pagar anticipado:** tabla de créditos vigentes (saldo, tasa, mensualidad, meses que restan), **Monto a pagar** y **Todo** para liquidarlo.
 
+**Disponibles:** debajo de **Cantidad** se muestra cuántos títulos hay y cuántos se pueden operar, con el límite que manda (público, máximo por operación, tenencia máxima, caja, tus títulos o títulos de la contraparte). Por ejemplo:
+- "Público: 12,000 disponibles · Puedes comprar hasta 3,500 acciones (límite: caja)";
+- "Tienes 2,000 · Puedes vender hasta 2,000 acciones (límite: tus títulos)";
+- en un cruce, lo que tiene la contraparte y el máximo al precio pactado.
+
 **Vista previa y registro:**
 - La **vista previa** muestra el importe, la comisión, la conversión de divisas, la ganancia y el impuesto (al vender), el neto y la tenencia final. Si la operación no procede, explica por qué.
 - **Registrar operación** (o Enter) la aplica y cuenta una operación.
@@ -172,13 +177,22 @@ Desde ahí se puede **Exportar ranking (CSV)** (`ranking-bmv.csv`, compatible co
 
 ## 4. Pantalla pública (`publico.html`)
 
-Para el proyector. Se actualiza sola con cada cambio del tablero, en el mismo navegador. **No muestra cajas, órdenes ni decisiones.**
+Para el proyector. Se actualiza sola con cada cambio del tablero, en el mismo navegador. **No muestra órdenes ni operaciones**; de las finanzas solo enseña las de la empresa en turno.
 
 - **Encabezado:** ronda, periodo, inflación anual, TIIE y tipo de cambio.
 - **Cotizaciones:** precio y variación de cada valor; marca los vencidos y liquidados.
 - **Turno:** empresa en turno y las siguientes 3.
-- **Noticias:** las últimas 8 de colocación, cierres, bonos, dividendos, riesgos, impagos, quiebras y fin.
-- **Ranking · Top 10**, o **Ranking final** al terminar.
+- **Empresa en turno** (junto al turno, encima del ranking):
+  - caja MXN y caja USD;
+  - cartera MXN y cartera USD (valor de mercado de los valores que cotizan en cada divisa);
+  - deuda bancaria;
+  - **total a pagar en la ronda**: mensualidades de la deuda y los créditos, más cupones y principal de sus bonos que vencen en los meses de la ronda, con su desglose.
+
+  Fuera de los turnos dice "Sin empresa en turno".
+- **Noticias:** todo el historial de colocación, cierres, bonos, dividendos, riesgos, impagos, quiebras y fin, de la más reciente a la más antigua, con scroll.
+  - **Filtros:** Todas · Riesgos · Cierre · Bonos · Colocación · Otras (dividendos, impagos, quiebras y fin).
+- **Ranking:** todas las empresas, con scroll; **Ranking final** al terminar.
+- Noticias y ranking conservan la posición del scroll cuando la pantalla se actualiza; también se recorren con el teclado (Tab y flechas).
 
 ## 5. Formatos de archivo
 
