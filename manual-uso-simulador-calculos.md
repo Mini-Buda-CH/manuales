@@ -45,8 +45,8 @@ SPEI, Ruta de una operación, Rendimiento simple y Costo de crédito son herrami
 
 | Carrera | Tipos de empresa |
 |---|---|
-| Finanzas y Contaduría | Grupos financieros y banca comercial · Fideicomisos de Bienes Raíces (FIBRAS) · Casas de Bolsa y Operadoras de Fondos |
-| Administración y Gestión Empresarial | Conglomerados industriales y de materiales · Grandes cadenas de retail (consumo frecuente) · Empresas de infraestructura y logística |
+| Finanzas y Contaduría | Grupos financieros y banca comercial · Fideicomisos de bienes raíces · Casas de bolsa y operadoras de fondos |
+| Administración y Gestión Empresarial | Conglomerados industriales y de materiales · Grandes cadenas de retail · Empresas de infraestructura y logística |
 | Administración de Empresas Turísticas | Operadores de aeropuertos · Cadenas hoteleras e inmobiliarias turísticas · Servicios de entretenimiento y restaurantes |
 
 El tipo de empresa importa en la fase 2: define la volatilidad de la acción y qué riesgos por giro le afectan.

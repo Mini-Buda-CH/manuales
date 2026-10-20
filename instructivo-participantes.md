@@ -101,16 +101,16 @@ El operador pulsa **Cerrar periodo** y el simulador:
 - un componente al azar;
 - los riesgos.
 
-Todo queda explicado en la bitácora y en las noticias de la pantalla pública.
+Todo queda explicado en la bitácora y en las noticias de la pantalla pública. Durante tu turno, la pantalla pública muestra tus cajas, tu cartera, tu deuda bancaria y lo que debes pagar en la ronda, así que todo el grupo los verá.
 
 ### Riesgos que te pueden tocar
 - **Mercado:** caída general o de tu giro.
 - **Clientes que no pagan:** es más probable si estás endeudado.
 - **Fallas:** de personas, procesos o sistemas. La falla de sistemas te quita tu siguiente turno.
 - **Economía:** subida de tasas o cambio en el dólar.
-- **Multa:** cuesta el 1 % de tus activos y una ronda sin operar.
+- **Multa:** cuesta el 10 % de tus activos y una ronda sin operar.
 - **Regulación:** tus costos suben 3 % durante 6 meses.
-- **Chisme sobre tu acción:** baja 10–20 % y tu demanda se reduce a la mitad durante 2 rondas. Pide al operador **desmentirlo** para recuperar la mitad de la caída.
+- **Chisme sobre tu acción:** baja 10–35 % y tu demanda se reduce a la mitad durante 2 rondas. Pide al operador **desmentirlo** para recuperar la mitad de la caída.
 
 ### Impago y quiebra
 - Si tu caja queda negativa al cierre, estás **en impago (1 de 2)**. Tienes 2 meses para regularizar: vende valores o pide crédito si tu calificación lo permite.

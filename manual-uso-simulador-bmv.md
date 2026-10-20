@@ -13,7 +13,7 @@ Documentos relacionados:
 
 ```
 index.html          →  configurar.html       →  tablero.html        +  publico.html
-Paso 1 · Empresas      Paso 2 · Partida          Ronda 0 y rondas       Proyector
+Empresas               Partida                   Ronda 0 y rondas       Proyector
 (cargar los JSON)      (parámetros y entorno)    (operar y cerrar)      (solo lectura)
 ```
 
@@ -63,11 +63,11 @@ Cada archivo lleva un sello con su estado:
 ### Lista "En la partida"
 - Muestra las empresas cargadas, en orden de carga. Ese orden desempata el ranking.
 - Cada una tiene un botón para eliminarla (pide "¿Eliminar?"). **Vaciar lista** las quita todas, también con confirmación.
-- **Configurar partida →** se habilita con 2 a 40 empresas.
+- **Configurar partida** se habilita con 2 a 40 empresas.
 
 ## 2. Configurar partida (`configurar.html`)
 
-A la izquierda está el formulario en secciones plegables; a la derecha, el **Entorno simulado** y las empresas.
+A la izquierda está el formulario **Configuración** en secciones plegables (al abrir solo se ve desplegada **Partida**); a la derecha, el **Entorno simulado** y las empresas.
 
 ### Partida
 - **Periodo por ronda:** Mensual o Trimestral. Cada ronda avanza 1 o 3 meses.
@@ -95,9 +95,9 @@ Se actualiza al cambiar cualquier parámetro:
 - la tabla de las **primeras 12 rondas**.
 
 ### Botones
-- **Guardar configuración:** valida y guarda. El estado en la cabecera dice "Guardada · fecha" o "Cambios sin guardar". Si hay errores, abre la sección y pone el foco en el primer campo con error.
+- **Guardar:** valida y guarda. El estado en la cabecera dice "Guardada · fecha" o "Cambios sin guardar". Si hay errores, abre la sección y pone el foco en el primer campo con error.
 - **Restablecer:** vuelve a los valores aprobados (pide confirmación).
-- **Iniciar partida →:** guarda, crea la partida y abre el tablero.
+- **Iniciar partida:** guarda, crea la partida y abre el tablero.
   - Si ya hay una partida en curso, dice **Continuar partida** y aparece **Empezar una partida nueva**, que borra la actual tras confirmar.
 - **← Volver a empresas.**
 
@@ -134,10 +134,15 @@ Se actualiza al cambiar cualquier parámetro:
 - **Comprar / Vender** (con el público): **Valor** (solo los colocados y vigentes; al vender, solo los que tiene) y **Cantidad**.
 - **Cruce:**
   - elige si la empresa en turno **Compra** o **Vende**;
-  - **Contraparte**, **Valor**, **Cantidad** y **Precio pactado** (propone la cotización; debe quedar dentro de ± 5 %).
+  - **Contraparte**, **Valor**, **Cantidad** y **Precio** pactado (propone la cotización; debe quedar dentro de ± 5 %).
 - **Crédito:**
   - **Solicitar:** **Monto** y **Plazo (meses)**, con la tasa, la comisión, el monto a recibir, la mensualidad estimada, los intereses estimados y el disponible;
   - **Pagar anticipado:** tabla de créditos vigentes (saldo, tasa, mensualidad, meses que restan), **Monto a pagar** y **Todo** para liquidarlo.
+
+**Disponibles:** el campo de cantidad se titula con la unidad (acciones o títulos) y debajo se muestra cuántos hay y cuántos se pueden operar; el máximo ya considera el público disponible, el máximo por operación, la tenencia máxima, la caja y los títulos de cada parte. Por ejemplo:
+- "Público: 12,000 disponibles · Puedes comprar hasta 3,500 acciones";
+- "Tienes 2,000 · Puedes vender hasta 2,000 acciones";
+- en un cruce, lo que tiene la contraparte y el máximo al precio pactado.
 
 **Vista previa y registro:**
 - La **vista previa** muestra el importe, la comisión, la conversión de divisas, la ganancia y el impuesto (al vender), el neto y la tenencia final. Si la operación no procede, explica por qué.
@@ -172,13 +177,22 @@ Desde ahí se puede **Exportar ranking (CSV)** (`ranking-bmv.csv`, compatible co
 
 ## 4. Pantalla pública (`publico.html`)
 
-Para el proyector. Se actualiza sola con cada cambio del tablero, en el mismo navegador. **No muestra cajas, órdenes ni decisiones.**
+Para el proyector. Se actualiza sola con cada cambio del tablero, en el mismo navegador. **No muestra órdenes ni operaciones**; de las finanzas solo enseña las de la empresa en turno.
 
 - **Encabezado:** ronda, periodo, inflación anual, TIIE y tipo de cambio.
 - **Cotizaciones:** precio y variación de cada valor; marca los vencidos y liquidados.
 - **Turno:** empresa en turno y las siguientes 3.
-- **Noticias:** las últimas 8 de colocación, cierres, bonos, dividendos, riesgos, impagos, quiebras y fin.
-- **Ranking · Top 10**, o **Ranking final** al terminar.
+- **Empresa en turno** (junto al turno, encima del ranking):
+  - caja MXN y caja USD;
+  - cartera MXN y cartera USD (valor de mercado de los valores que cotizan en cada divisa);
+  - deuda bancaria;
+  - **total a pagar en la ronda**: mensualidades de la deuda y los créditos, más cupones y principal de sus bonos que vencen en los meses de la ronda y, si toca, el dividendo estimado. Se muestra solo el total.
+
+  Fuera de los turnos dice "Sin empresa en turno".
+- **Noticias:** todo el historial de colocación, cierres, bonos, dividendos, riesgos, impagos, quiebras y fin, de la más reciente a la más antigua, con scroll.
+  - **Filtros:** Todas · Riesgos · Cierre · Bonos · Colocación · Dividendos · Impago · Quiebra. El fin de partida aparece en Cierre.
+- **Ranking:** todas las empresas, con scroll; **Ranking final** al terminar.
+- Noticias y ranking conservan la posición del scroll cuando la pantalla se actualiza; también se recorren con el teclado (Tab y flechas).
 
 ## 5. Formatos de archivo
 

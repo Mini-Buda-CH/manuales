@@ -174,10 +174,10 @@ P nuevo = P · exp(total), con un tope de ± 25 % por mes
 | Tipo de empresa | σ mensual |
 |---|---|
 | Grupos financieros y banca comercial | 3.5 % |
-| Fideicomisos de Bienes Raíces (FIBRAS) | 3.0 % |
-| Casas de Bolsa y Operadoras de Fondos | 4.5 % |
+| Fideicomisos de bienes raíces | 3.0 % |
+| Casas de bolsa y operadoras de fondos | 4.5 % |
 | Conglomerados industriales y de materiales | 4.0 % |
-| Grandes cadenas de retail (consumo frecuente) | 3.5 % |
+| Grandes cadenas de retail | 3.5 % |
 | Empresas de infraestructura y logística | 3.5 % |
 | Operadores de aeropuertos | 4.5 % |
 | Cadenas hoteleras e inmobiliarias turísticas | 4.5 % |
@@ -271,17 +271,17 @@ Cada mes se sortean eventos, con un máximo de 2 por ronda (*configurable*). Las
 
 | Riesgo | Prob. | Efecto en el valor |
 |---|---|---|
-| Caída general del mercado | 6 % | Todas las acciones −5 a −12 % |
-| Caída por giro comercial | 8 % | Acciones de un tipo de empresa −8 a −20 % |
-| Incumplimiento de pago | 1 a 5 % por empresa* | Pierde 20–40 % de su saldo de clientes en caja; puede llevar a impago |
+| Caída general del mercado | 6 % | Todas las acciones −5 a −20 % |
+| Caída por giro comercial | 8 % | Acciones de un tipo de empresa −8 a −25 % |
+| Incumplimiento de pago | 1 a 5 % por empresa* | Pierde 15–40 % de su saldo de clientes en caja; puede llevar a impago |
 | Falla de personas | 4 % | Costo del 10 % de su utilidad operativa mensual** |
 | Falla de procesos | 4 % | Costo del 15 % |
-| Falla de sistemas | 3 % | Costo del 5 % y pierde su siguiente turno |
+| Falla de sistemas | 3 % | Costo del 10 % y pierde su siguiente turno |
 | Cambio de tasas | 5 % | TIIE +50, 75 o 100 pb desde el mes siguiente, que regresa 25 pb por mes |
-| Tipo de cambio | 5 % | El dólar sube o baja 3–6 % de forma permanente |
-| Incumplimiento legal | 3 % | Multa del 1 % de sus activos y una ronda sin operar |
+| Tipo de cambio | 5 % | El dólar sube o baja 3–10 % de forma permanente |
+| Incumplimiento legal | 3 % | Multa del 10 % de sus activos y una ronda sin operar |
 | Cambio regulatorio | 3 % | Costos y gastos de un tipo de empresa +3 % durante 6 meses |
-| Chisme | 5 % | Su acción −10 a −20 % y su demanda a la mitad durante 2 rondas |
+| Chisme | 5 % | Su acción −10 a −35 % y su demanda a la mitad durante 2 rondas |
 
 \* Probabilidad = 1 % + 4 % × mín(1, endeudamiento ÷ 2). Más deuda, más riesgo.
 \** Utilidad operativa del último mes; si no es positiva, 1 % de sus ventas mensuales.
