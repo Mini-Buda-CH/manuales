@@ -33,7 +33,7 @@ En **Configurar partida**:
 | Parámetros | Deja los aprobados salvo que quieras un escenario especial. **Restablecer** los devuelve |
 
 - Revisa las gráficas y la tabla del entorno: inflación, TIIE y tipo de cambio de las primeras 12 rondas.
-- Pulsa **Guardar configuración** y luego **Iniciar partida**.
+- Pulsa **Guardar** y luego **Iniciar partida**.
 
 > Si ya hay una partida en curso, el botón dice **Continuar partida**. **Empezar una partida nueva** borra la actual; pide un segundo clic para confirmar.
 
